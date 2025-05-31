@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+body {
+  text-align: center;
+  font-family: arial, sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+  padding: 0.5em;
+}
+
+h2 {
+  display: inline-block;
+  font-size: 1.25rem;
+}
+
+p {
+  color: dimgray;
+  margin-left: 0.5em;
+  line-height: 1.4;
+}
+
+button {
+  border: none;
+}
+
+label {
+  font-size: 0.75rem;
+  text-align: left;
+}
+
+input {
+  border: solid 1.5px lightgray;
+  border-radius: 5px;
+  padding: 0.25em;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 450px;
+  min-width: 320px;
+}
+
+ul {
+  margin-top: 1.5em;
+}
+
+li {
+  list-style: none;
+  border-radius: 10px;
+  text-align: left;
+  padding: 0.5em;
+  background-color: whitesmoke;
+}
+
+li + li {
+  margin-top: 1em;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+form > button {
+  margin-top: 1.5em;
+}
+
+.alignInline {
+  display: flex;
+  align-items: center;
+}
+
+.btnL {
+  padding: 0.5em 1em;
+  background-color: dimgray;
+  color: white;
+  border-radius: 25px;
+}
+
+.btnM {
+  margin-top: 1em;
+  padding: 0.5em 1em;
+  background-color: lightgray;
+  border-radius: 25px;
+}
+
+.btnS {
+  margin-left: 1.75em;
+  padding: 0.25em 0.5em;
+  border: solid 1px gray;
+  border-radius: 25px;
+  font-size: 0.75rem;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.inputContainer + .inputContainer {
+  margin-top: 1em;
+}
+
+.detailsH2 {
+  padding-bottom: 0.5em;
+}
+
+.messageContainer {
+  text-align: center;
+  padding: 1em;
+  border: solid 1px gray;
+  border-radius: 15px;
+}
