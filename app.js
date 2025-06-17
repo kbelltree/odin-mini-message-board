@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const path = require('node:path');
 const app = express();
@@ -15,11 +16,11 @@ app.use('/', index);
 
 // eslint-disable-next-line no-unused-vars
 app.use((err, req, res, next) => {
-  console.err(err);
+  console.log(err);
   res.status(err.statusCode || 500).send(err.message);
 });
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Mini Message Board app - listening on port ${PORT}`);
 });

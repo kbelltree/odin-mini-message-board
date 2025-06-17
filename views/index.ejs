@@ -12,9 +12,9 @@
             <h2>
               <%= messages[i].text.length <= 30 ? messages[i].text : messages[i].text.substring(0, 29) + '...' %>
             </h2>
-            <a href="/details/<%= i %>" class="btnS">Open</a>
+            <a href="/details/<%=messages[i].id %>" class="btnS">Open</a>
           </div>
-          <p><%= messages[i].user %></p>
+          <p><%= messages[i].username %></p>
           <p><%= messages[i].added %></p>
         </li>
         <% } %>

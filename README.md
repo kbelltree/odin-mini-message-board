@@ -1,12 +1,20 @@
 # The Odin Project: Mini Message Board
 
+(Phase 1)<br>
 This **Mini Message Board** project was developed to strengthen my skills in **Express** and **EJS**.
 
 For more details on the project assignment, please visit [The Odin Project - Mini Message Board](https://www.theodinproject.com/lessons/node-path-nodejs-mini-message-board).
 
+(Phase 2)<br>
+This phase focuses on refactoring the project to implement a **PostgreSQL** database using **node-postgres (pg)** in order to deepen my understanding of working with relational databases in a Node.
+
+For more details on the project assignment, plese visit [The Odin Project - Assignment 3](https://www.theodinproject.com/lessons/nodejs-using-postgresql#assignment).
+
 ## Key Project Instructions
 
 The project was developed following these main guidelines:
+
+### Phase 1:
 
 - Install Express and EJS.
 - Prepare two routes - `/` for index page, `/new` for the new message form page.
@@ -25,6 +33,12 @@ The project was developed following these main guidelines:
   5.  Display the new message on the index page
 - Add an Open button next to each message that links to a detailed view of the selected message.
 
+### Phase 2:
+
+- Persist messages across visits by integrating PostgreSQL using a PaaS database service.
+- Create a `messages` table and optionally occupy it with sample data using node-postgres (pg).
+- Refactor Phase 1 route handlers to interact directly with the PostgreSQL database instead of temporary in-memory data.
+
 ## Built With
 
 - HTML
@@ -32,5 +46,7 @@ The project was developed following these main guidelines:
 - JavaScript
 - Express
 - EJS
+- Dotenv
+- pg
 - ESLint
 - Prettier
